@@ -1,0 +1,72 @@
+SERVICE RUSH - SPRITE LIST (service-rush.pyxres)
+All sprites: image bank 0, 16x16, default Pyxel palette.
+Colour 0 is transparent -> pyxel.blt(x, y, 0, u, v, 16, 16, 0)
+Format: name -> (bank, u, v, w, h)
+
+CHEFS (chef 1: polka-dot bandana / chef 2: toque and moustache)
+  chef 1 - front ..................... (0, 0, 0, 16, 16)
+  chef 1 - side walk 1 ............... (0, 16, 0, 16, 16)
+  chef 1 - side walk 2 ............... (0, 32, 0, 16, 16)
+  chef 1 - carrying (arms up) ........ (0, 48, 0, 16, 16)
+  chef 1 - front, rushed ............. (0, 64, 0, 16, 16)
+  chef 1 - side walk 1, rushed ....... (0, 80, 0, 16, 16)
+  chef 1 - side walk 2, rushed ....... (0, 96, 0, 16, 16)
+  chef 1 - carrying (arms up), rushed  (0, 112, 0, 16, 16)
+  chef 2 - front ..................... (0, 128, 0, 16, 16)
+  chef 2 - side walk 1 ............... (0, 144, 0, 16, 16)
+  chef 2 - side walk 2 ............... (0, 160, 0, 16, 16)
+  chef 2 - carrying (arms up) ........ (0, 176, 0, 16, 16)
+  chef 2 - front, rushed ............. (0, 192, 0, 16, 16)
+  chef 2 - side walk 1, rushed ....... (0, 208, 0, 16, 16)
+  chef 2 - side walk 2, rushed ....... (0, 224, 0, 16, 16)
+  chef 2 - carrying (arms up), rushed  (0, 240, 0, 16, 16)
+  Side sprites face right; to face left draw them with a negative width:
+  pyxel.blt(x, y, 0, u, v, -16, 16, 0)
+  Rushed = red face and a drop of sweat.
+  Carrying: draw the dish sprite on top, about 10 px above the chef.
+
+RAW INGREDIENTS
+  tomato ............................ (0, 0, 16, 16, 16)
+  potato ............................ (0, 16, 16, 16, 16)
+  onion ............................. (0, 32, 16, 16, 16)
+  chorizo ........................... (0, 48, 16, 16, 16)
+  egg ............................... (0, 64, 16, 16, 16)
+
+CHOPPED INGREDIENTS
+  chopped tomato .................... (0, 0, 32, 16, 16)
+  chopped potato .................... (0, 16, 32, 16, 16)
+  chopped onion ..................... (0, 32, 32, 16, 16)
+  chopped chorizo ................... (0, 48, 32, 16, 16)
+
+DISHES
+  empty dish ........................ (0, 0, 48, 16, 16)
+  gazpacho .......................... (0, 16, 48, 16, 16)
+  Spanish omelette .................. (0, 32, 48, 16, 16)
+  broken eggs with chorizo .......... (0, 48, 48, 16, 16)
+  blended mess (not a recipe) ....... (0, 64, 48, 16, 16)
+  cooked mess (not a recipe) ........ (0, 80, 48, 16, 16)
+
+KITCHEN TILES
+  floor ............................. (0, 0, 64, 16, 16)
+  worktop ........................... (0, 16, 64, 16, 16)
+  wall (dividing counter) ........... (0, 32, 64, 16, 16)
+  hand-over surface ................. (0, 48, 64, 16, 16)
+  drawer ............................ (0, 64, 64, 16, 16)
+  chopping board .................... (0, 80, 64, 16, 16)
+  blender ........................... (0, 96, 64, 16, 16)
+  pan ............................... (0, 112, 64, 16, 16)
+  dish stack ........................ (0, 128, 64, 16, 16)
+  delivery counter .................. (0, 144, 64, 16, 16)
+  bin ............................... (0, 160, 64, 16, 16)
+  sink (optional, Sprint 5) ......... (0, 176, 64, 16, 16)
+
+EQUIPMENT WORKING
+  blender full ...................... (0, 0, 80, 16, 16)
+  pan cooking ....................... (0, 16, 80, 16, 16)
+
+SERVICE BOARD
+  failure (X) ....................... (0, 32, 80, 16, 16)
+  clock ............................. (0, 48, 80, 16, 16)
+  star (optional, Sprint 5) ......... (0, 64, 80, 16, 16)
+
+Tip: draw the ingredient sprite on top of the drawer tile to show what each drawer holds.
